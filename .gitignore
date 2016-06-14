@@ -1,0 +1,28 @@
+.DS_Store
+.classpath
+.project
+.settings/
+.idea/
+.log
+.metadata/
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# STS
+.classpath
+.project
+.settings/
+
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+bin
+src/main/webapp/dist//
+.mvn/
+data/
