@@ -15,6 +15,10 @@ mvnw.cmd
 .project
 .settings/
 
+# FrontEnd
+src/main/resources/static/*
+front-end/app/js/bin/template/
+front-end/app/css/sass/
 
 # Mac
 .DS_Store
@@ -23,6 +27,8 @@ mvnw.cmd
 log/
 target/
 bin
-src/main/webapp/dist//
+src/main/webapp/dist/
+front-end/node_modules/
+front-end/app/static/
 .mvn/
 data/
