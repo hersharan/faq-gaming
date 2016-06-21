@@ -6,3 +6,10 @@
 Add @Controller stereotype to the class and @RequestMapping(“/”) to intex() method whick return the name of template.
 6.Now you can run the project in terminal using command "mvn -e spring-boot:run".
 7. Your application will be available on http://localhost:8080.
+
+
+
+Front End Running:
+1- sudo npm install
+2- sudo npm install gulp
+3 - npm install --save-dev jshint gulp-jshint
