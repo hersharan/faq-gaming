@@ -11,5 +11,6 @@ Add @Controller stereotype to the class and @RequestMapping(“/”) to intex() 
 
 Front End Running:
 1- sudo npm install
-2- sudo npm install gulp
-3 - npm install --save-dev jshint gulp-jshint
+2- sudo npm install gulp -g
+3- sudo npm install gulp
+//// if jshint error occurs then -- npm install --save-dev jshint gulp-jshint

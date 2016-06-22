@@ -4,8 +4,13 @@ app.factory( 'SessionInjector', [ '$q', 'localStorageService', 'Constants', '$ro
     var sessionInjector = {
       request: function( config ) {
         $rootScope.$broadcast( 'loadingStarted', {} );
-        if ( localStorageService.get( Constants.AUTH_TOKEN_KEY ) ) {
+        if ( localStorageService.get( Constants.AUTH_TOKEN_KEY ) && ( config.url.indexOf( 'facebook.com' ) == -
+                1 ) && ( config.url.indexOf( 'maps.googleapis.com' ) == -1 )) {
           config.headers[ Constants.AUTH_TOKEN_KEY ] = localStorageService.get( Constants.AUTH_TOKEN_KEY );
+        } else {
+          if ( ( config.url.indexOf( 'maps.googleapis.com' ) > -1 ) || ( config.url.indexOf( 'facebook.com' ) > -1 ) ) {
+            config.headers = [];
+          }
         }
         return config;
       }
