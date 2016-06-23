@@ -6,7 +6,7 @@ angular.module( 'app', [ 'ui.router', 'ngMaterial', 'ngAnimate', 'ngMessages', '
   $httpProvider.interceptors.push( 'SessionInjector' );
   $authProvider.baseUrl = Constants.APP_URL;
   $authProvider.facebook( {
-    clientId: '947259981972422'
+    clientId: '1182289295136155'
   } );
   $authProvider.google( {
     clientId: '755756387603-uv8mg9ec1t8a7g0m7n22ju5m0vbud0p0.apps.googleusercontent.com'
