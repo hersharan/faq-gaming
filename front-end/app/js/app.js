@@ -4,7 +4,7 @@ angular.module( 'app', [ 'ui.router', 'ngMaterial', 'ngAnimate', 'ngMessages', '
   $locationProvider.html5Mode( true );
   $urlRouterProvider.otherwise( '/' );
   $httpProvider.interceptors.push( 'SessionInjector' );
-  $authProvider.baseUrl = Constants.APP_URL;
+  // $authProvider.baseUrl = Constants.APP_URL;
   $authProvider.facebook( {
     clientId: '1182289295136155'
   } );
