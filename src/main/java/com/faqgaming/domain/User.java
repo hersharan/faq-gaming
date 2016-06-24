@@ -6,10 +6,12 @@ import java.util.List;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.faqgaming.domain.enums.Role;
 import com.faqgaming.domain.enums.Status;
 
+@Document
 public class User extends AbstractMongoEntity {
 
 	/**
