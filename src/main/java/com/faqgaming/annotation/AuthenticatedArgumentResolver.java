@@ -69,7 +69,7 @@ public class AuthenticatedArgumentResolver implements HandlerMethodArgumentResol
     return user;
   }
 
-  private User getUser(TokenDto token, User user) throws EntityNotFoundException {
+  private User getUser(TokenDto token, User user) throws FaqGamingException {
     if (Role.USER.equals(token.getRole())) {
       user = userService.findOne(token.getPayload());
     }
